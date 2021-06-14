@@ -1,7 +1,7 @@
 import React from 'react';
 import './Chat.css';
 import { Avatar,IconButton } from '@material-ui/core';
-import { AttachFile, InsertEmoticon } from '@material-ui/icons';
+import { AttachFile, InsertEmoticon ,Mic } from '@material-ui/icons';
 import MoreVertIcon from  '@material-ui/icons/MoreVert';
 import SearchOutLined from  '@material-ui/icons/SearchOutlined';
 
@@ -29,6 +29,27 @@ function Chat() {
                 <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
                 <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
                 <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
+                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
+                <p className={`chat__message ${true &&'chat__reciever'}`}><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
             </div>
             <div className="chat__footer">
                     <IconButton>
@@ -36,6 +57,12 @@ function Chat() {
                     </IconButton>
                     <IconButton>
                         <AttachFile/>
+                    </IconButton>
+                        <form action="">
+                            <input className="chat__sendMessage" type="text" placeholder="Type a message" />
+                        </form>
+                    <IconButton className="chat__footerRight">
+                        <Mic />
                     </IconButton>
             </div>
         </div>

@@ -31,7 +31,20 @@
     justify-content: space-between;
     min-width: 100px;
 }
+.chat__name
+{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: xx-small;
+    font-weight: bold;
+}
 
+.timestamp
+{
+    margin-left: 10px;
+    font-size: xx-small;
+}
 .chat__body
 {
     background-image: url("./whatsapp_wallpaper.png");
@@ -48,6 +61,6 @@
     font-size: 16px;
     padding: 10px;
     width: fit-content;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     border-radius: 0px 10px 10px 10px;
 }

@@ -24,15 +24,15 @@ function Sidebar(props) {
                     </IconButton>
                 </div>
             </div>
-            <div className="sidebar__search">
+            <div className="sidebar__search" >
                 <div className="sidebar__searchContainer">
                     <SearchOutLined />
-                    <input type="text" placeholder="Search or start new chat" />  
+                    <input style={{width:"25vw",outline:"none"}} type="text" placeholder="Search or start new chat" autofocus= "false"/>  
                 </div>
                 
             </div>
             <div className="sidebar__chats">
-                <SidebarChat />
+                <SidebarChat addNewChat/>
                 <SidebarChat />
                 <SidebarChat />
                 <SidebarChat />

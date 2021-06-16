@@ -16,7 +16,7 @@ function Chat() {
     useEffect(() => {
         if(roomId){
             db.collection('rooms').doc(roomId).onSnapshot(snapshot => {
-                setRoomName(snapshot.data().name);
+                setRoomName(snapshot.data.name);
             });
         }
     }, [roomId])
@@ -52,20 +52,6 @@ function Chat() {
                 </div>
             </div>
             <div className="chat__body">
-                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
-                <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>
                 <p className="chat__message"><span className="chat__name">Rishab</span>Busy Person <span className="timestamp">3:53PM</span></p>
                 <p className="chat__message"><span className="chat__name">Sunny</span>Hello <span className="timestamp">3:53PM</span></p>
                 <p className="chat__message"><span className="chat__name">Monty</span>Hii <span className="timestamp">3:53PM</span></p>

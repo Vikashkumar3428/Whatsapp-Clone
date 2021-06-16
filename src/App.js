@@ -9,9 +9,10 @@ function App() {
     // BEM  naming convention
     <div className="App">
         <div className="app__body">
-          <Router> 
-           <Sidebar/>
+          <Router>
+            <Sidebar/> 
             <Switch>
+             
               <Route path ="/rooms/:roomId">
                   <Chat />
               </Route>

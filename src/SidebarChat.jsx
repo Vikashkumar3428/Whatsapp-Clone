@@ -19,7 +19,7 @@ function SidebarChat({ id, name, addNewChat }) {
                 {
                     name :roomName,
                 }
-            )
+            );
         }
     };
 
